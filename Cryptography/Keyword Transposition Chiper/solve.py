@@ -53,7 +53,7 @@ def decode(chipertext, permutation):
 
 N = int(input())
 for i in range(N):
-    key, chipertext = input(), input()
+    key, ciphertext = input(), input()
     substitution = substitution_matrix(key)
-    plaintext = decode(chipertext, substitution)
+    plaintext = decode(ciphertext, substitution)
     print(plaintext)
